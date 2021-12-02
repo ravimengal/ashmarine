@@ -1,37 +1,75 @@
 import React from 'react'
-import { Navbar, Nav, Container,NavDropdown, Offcanvas} from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
+import Welcome from '../WelcomePage/Welcome';
 const NavBar = () => {
     return (
-      <Navbar bg='light' expand={false}>
-  <Container fluid>
-    <Navbar.Brand style={{fontWeight:'bolder'}} href="#">NASA OBSERVER</Navbar.Brand>
-    <Navbar.Toggle aria-controls="offcanvasNavbar" />
-    <Navbar.Offcanvas
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-      placement="end"
-      
-    >
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title id="offcanvasNavbarLabel">NASA OBSERVER</Offcanvas.Title>
-      </Offcanvas.Header>
-      <Offcanvas.Body>
-        <Nav className="justify-content-end flex-grow-1 pe-3">
-          <Nav.Link href="#action1">Home</Nav.Link>
-          <Nav.Link href="#action2">About</Nav.Link>
+        <div>
+      <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
+      <div className='container'>
+        <div className='navbar-header'>
+          <button
+            type='button'
+            className='navbar-toggle collapsed'
+            data-toggle='collapse'
+            data-target='#bs-example-navbar-collapse-1'
+          >
+            {' '}
+            <span className='sr-only'>Toggle navigation</span>{' '}
+            <span className='icon-bar'></span>{' '}
+            <span className='icon-bar'></span>{' '}
+            <span className='icon-bar'></span>{' '}
+          </button>
+          <a className='navbar-brand page-scroll' href='#page-top'>
+            React Landing Page
+          </a>{' '}
+        </div>
 
-          <NavDropdown title="Events Category" id="offcanvasNavbarDropdown">
-            <NavDropdown.Item href="#action3">Wild Fire</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-            
-           
-          </NavDropdown>
-        </Nav>
-       
-      </Offcanvas.Body>
-    </Navbar.Offcanvas>
-  </Container>
-</Navbar>
+        <div
+          className='collapse navbar-collapse'
+          id='bs-example-navbar-collapse-1'
+        >
+          <ul className='nav navbar-nav navbar-right'>
+            <li>
+              <a href='#features' className='page-scroll'>
+                Features
+              </a>
+            </li>
+            <li>
+              <a href='#about' className='page-scroll'>
+                About
+              </a>
+            </li>
+            <li>
+              <a href='#services' className='page-scroll'>
+                Services
+              </a>
+            </li>
+            <li>
+              <a href='#portfolio' className='page-scroll'>
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href='#testimonials' className='page-scroll'>
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a href='#team' className='page-scroll'>
+                Team
+              </a>
+            </li>
+            <li>
+              <a href='#contact' className='page-scroll'>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <Welcome/>
+      </div>
     )
 }
 
