@@ -1,0 +1,36 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.welcome{
+
+  
+    height:100vh;
+    background: url(../../asset/585945.jpg) center center no-repeat;
+   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.overlay{
+    height:100vh;
+    background: rgba(43, 42, 42, 0.2);
+
+}
+.overlay h1{
+
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+    
+}

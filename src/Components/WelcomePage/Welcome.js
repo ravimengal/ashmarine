@@ -1,9 +1,15 @@
 import React from 'react'
+import './Welcome.css'
 
 const Welcome = () => {
     return (
-        <div>
-            <h1>hello from Home</h1>
+        <div className='welcome'>
+            <div className='overlay'>
+
+                <h1>Welcome to A S MARINE HOSPITALITY</h1>
+            </div>
+          
+           
         </div>
     )
 }
